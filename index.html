@@ -1,105 +1,339 @@
 <!DOCTYPE html>
-<html>
-<title>Pawan Kalwaniya</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-<body class="w3-black">
+<html lang="en">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="pawankalwaniya.jfif" style="width:100%" alt="Pawan Kalwaniya">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <!-- <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
-  </a> -->
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Manish Kumawat</title>
+  <meta name="description" content="Portfolio Template for Developer" />
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <!-- <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a> -->
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
+  <link rel="stylesheet" href="css/style.css" />
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Pai Owner.</h1>
-    <p>React Js Developer</p>
-    <img src="pawankalwaniya.jfif" alt="Pawan Kalwaniya" class="w3-image" width="992" height="1108">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <div class="header__logo-img-cont">
+          <img src="./assets/jpeg/photo.jpg" alt="Ram Maheshwari Logo Image" class="header__logo-img" />
+        </div>
+        <span class="header__logo-sub">Manish Kumawat</span>
+      </div>
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper">
+            <a href="./index.html" class="header__link"> Home </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#about" class="header__link">About </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#achievements" class="header__link">Achievements </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#thesis" class="header__link">Thesis </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#projects" class="header__link">
+              Projects
+            </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#contact" class="header__link"> Contact </a>
+          </li>
+        </ul>
+        <div class="header__main-ham-menu-cont">
+          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+            class="header__main-ham-menu-close d-none" />
+        </div>
+      </div>
+    </div>
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link">
+            <a href="./index.html"> Home </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#about"> About </a>
+          </li>
+
+          </li>
+          <li class="header__sm-menu-link">
+            <a href="./index.html#achievements"> Achievements </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#thesis"> Thesis </a>
+          </li>
+
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#projects"> Projects </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#contact"> Contact </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Pawan Kalwaniya</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>A developer is an individual that builds and create software and applications. He or she writes, debugs and executes the source code of a software application. A developer is also known as a software developer, computer programmer, programmer, software coder or software engineer.
-    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Web Design</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+  <section class="home-hero">
+    <div class="home-hero__content">
+      <h1 class="heading-primary">Hey, My self Manish Kumawat</h1>
     </div>
-    <p class="w3-wide">Web Development</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    <div class="home-hero__socials">
+      <div class="home-hero__social">
+        <a href="#" class="home-hero__social-icon-link">
+          <img src="./assets/png/linkedin-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="#" class="home-hero__social-icon-link">
+          <img src="./assets/png/github-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+
     </div>
-    <p class="w3-wide">Javascript</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    <div class="home-hero__mouse-scroll-cont">
+      <div class="mouse"></div>
     </div>
-    <p class="w3-wide">HTML,SCSS,Bootstrap</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:98%"></div>
-    </div><br>
-    
+  </section>
+  <section id="about" class="about sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">About Me</span>
+        <span class="heading-sec__sub">
+          I am a dedicated and aspiring aerospace engineer, with a master's degree from the University of
+          Texas-Arlington and a robust background in mechanical engineering from Swami Keshwanand Institute of
+          Technology, India. My academic journey has endowed me with a deep blend of theoretical knowledge and hands-on
+          expertise. I am deeply passionate about innovation and am committed to achieving excellence in all my
+          endeavors.<br />
+          My professional experience includes working as a research assistant at the University of Texas at Arlington,
+          where I specialized in advanced thermal cooling solutions, focusing particularly on metal foam single-phase
+          liquid immersion cooling. Before this role, I contributed as an associate Mechanical engineer at AHA 3D
+          Innovations Pvt. Ltd. And worked on STLA Brain as an Embedded systems Engineer at KPIT Technologies Ltd. I
+          gained significant practical experience during my Mechanical Engineering internship at Bharat-Benz Pvt. Ltd.
+          Notably, my projects such as the Aluminium Porous Foam Heat Transfer Study, the development of the Tesla
+          Valvular conduit (Tesla valve), UAV System design, and Rocket Nozzle Design, highlight my capability to
+          innovate and drive results in complex engineering challenges.
+        </span>
+      </h2>
+      <div class="about__content">
+        <div class="about__content-main">
+          <a href="https://rc.library.uta.edu/uta-ir/handle/10106/31998" target="_blank"
+            class="btn btn--med btn--theme dynamicBgClr">Publication</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="achievements" class="projects sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Achievements</span>
+        <span class="heading-sec__sub">
+          Promoted with the Thesis badge on presentation day, December 14th. 2023 at EMNSPC, UTA
+        </span>
+      </h2>
 
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+      <div class="projects__content">
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/jpeg/achivements.jpg" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Presented Research Study on Thermal Performance of Porous Heat Sinks
+              in SPLIC.</h3>
+            <p class="projects__row-content-desc">
+            <p style="font-size: 18px;  font-weight: 500;">
+              Dr. Dereje Agonafer<br />
+              Presidential Distinguished Professor<br />
+              Member, National Academy of Engineering<br />
+              Member, The Academy of Medicine, Engineering and Science of Texas<br />
+              Past President, UTA Chapter of the National Academy of Inventors<br />
+              ASME Honorary Member, Fellow: AAAS, and NAI<br />
+              Site Director, NSF IUCRC Center in Energy Efficient Systems<br />
+              Director, Electronics, MEMS & Nanoelectronics Systems Packaging Center<br />
+              Mechanical and Aerospace Engineering Department<br />
+              500 West First St, Rm 211A Woolf Hall<br />
+              University of Texas at Arlington<br />
+              Arlington, TX 76019
+            </p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="thesis" class="projects sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Thesis</span>
+      </h2>
+      <div class="projects__content">
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/png/thesiscertificate.png" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">EXPERIMENTAL STUDY ON THERMAL PERFORMANCE OF METAL FOAM HEAT SINKS
+              IN SINGLE PHASE LIQUID IMMERSION COOLING.</h3>
+            <p class="projects__row-content-desc">
+              This work presented an experimental study on the thermal performance of aluminum foam heat sinks in
+              single-phase liquid immersion cooling (SPLIC).
+            </p>
+            <a href="./project-1.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="projects sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Projects</span>
+        <span class="heading-sec__sub">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+          tempora explicabo quae quod deserunt eius sapiente
+        </span>
+      </h2>
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Jaipur, Rajasthan</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 7790807904</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: pawankalvaniya@gmail.com</p>
-    </div><br>
-  <!-- End Contact Section -->
-  </div>
+      <div class="projects__content">
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/jpeg/project-mockup-example.jpeg" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Project 1</h3>
+            <p class="projects__row-content-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              facilis tempora, explicabo quae quod deserunt eius sapiente
+              praesentium.
+            </p>
+            <a href="./project-1.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/jpeg/project-mockup-example.jpeg" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Project 2</h3>
+            <p class="projects__row-content-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              facilis tempora, explicabo quae quod deserunt eius sapiente
+              praesentium.
+            </p>
+            <a href="./project-2.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/jpeg/project-mockup-example.jpeg" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Project 3</h3>
+            <p class="projects__row-content-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              facilis tempora, explicabo quae quod deserunt eius sapiente
+              praesentium.
+            </p>
+            <a href="./project-3.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact sec-pad dynamicBg">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+        <span class="heading-sec__sub heading-sec__sub--lt">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+          tempora explicabo quae quod deserunt eius sapiente
+        </span>
+      </h2>
+      <div class="contact__form-container">
+        <form action="#" class="contact__form">
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="name">Name</label>
+            <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name"
+              id="name" />
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="email">Email</label>
+            <input required placeholder="Enter Your Email" type="text" class="contact__form-input" name="email"
+              id="email" />
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="message">Message</label>
+            <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message"
+              name="message" id="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn--theme contact__btn">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <div class="main-footer__row main-footer__row-1">
+          <h2 class="heading heading-sm main-footer__heading-sm">
+            <span>Social</span>
+          </h2>
+          <div class="main-footer__social-cont">
+            <a target="_blank" rel="noreferrer" href="#">
+              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="#">
+              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="#">
+              <img class="main-footer__icon" src="./assets/png/twitter-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="#">
+              <img class="main-footer__icon" src="./assets/png/yt-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="#">
+              <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png" alt="icon" />
+            </a>
+          </div>
+        </div>
+        <div class="main-footer__row main-footer__row-2">
+          <h4 class="heading heading-sm text-lt">Manish Kumawat</h4>
+          <p class="main-footer__short-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
+            tempora explicabo quae quod deserunt
+          </p>
+        </div>
+      </div>
 
+      <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+      <div class="main-footer__lower">
+        &copy; Copyright 2021. Made by
+        <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
+      </div>
+    </div>
+  </footer>
 
-<!-- END PAGE CONTENT -->
-</div>
-
+  <script src="./index.js"></script>
 </body>
+
 </html>
