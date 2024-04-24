@@ -14,6 +14,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
     rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .carousel-inner>.item>img,
+    .carousel-inner>.item>a>img {
+      width: 70%;
+      margin: auto;
+    }
+  </style>
 </head>
 
 <body>
@@ -89,20 +100,20 @@
   </header>
   <section class="home-hero">
     <div class="home-hero__content">
-      <h1 class="heading-primary">Hey, My self Manish Kumawat</h1>
-    </div>
-    <div class="home-hero__socials">
-      <div class="home-hero__social">
-        <a href="#" class="home-hero__social-icon-link">
+      <h1 class="heading-primary">Manish Kumawat</h1>
+      <p class="heading-primary_sub">
+        MS Aerospace Engineering
+      </p>
+      <div class="home-hero__social_parent">
+        <a href="https://www.linkedin.com/in/manish-kumawat-856195278/" target="_blank"
+          class="home-hero__social-icon-link_left">
           <img src="./assets/png/linkedin-ico.png" alt="icon" class="home-hero__social-icon" />
         </a>
-      </div>
-      <div class="home-hero__social">
-        <a href="#" class="home-hero__social-icon-link">
+
+        <a href="mailto:manish.kumawat0223@gmail.com" class="home-hero__social-icon-link_right">
           <img src="./assets/png/github-ico.png" alt="icon" class="home-hero__social-icon" />
         </a>
       </div>
-
     </div>
     <div class="home-hero__mouse-scroll-cont">
       <div class="mouse"></div>
@@ -140,7 +151,7 @@
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-bg">
         <span class="heading-sec__main">Achievements</span>
-        <span class="heading-sec__sub">
+        <span class="heading-sec__sub heading-sec__subcustom">
           Promoted with the Thesis badge on presentation day, December 14th. 2023 at EMNSPC, UTA
         </span>
       </h2>
@@ -155,8 +166,8 @@
             <h3 class="projects__row-content-title">Presented Research Study on Thermal Performance of Porous Heat Sinks
               in SPLIC.</h3>
             <p class="projects__row-content-desc">
-            <p style="font-size: 18px;  font-weight: 500;">
-              Dr. Dereje Agonafer<br />
+            <p style="font-size: 16px;  font-weight: 500;">
+              <b>Dr. Dereje Agonafer</b><br />
               Presidential Distinguished Professor<br />
               Member, National Academy of Engineering<br />
               Member, The Academy of Medicine, Engineering and Science of Texas<br />
@@ -181,28 +192,93 @@
         <span class="heading-sec__main">Thesis</span>
       </h2>
       <div class="projects__content">
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/png/thesiscertificate.png" alt="Software Screenshot" class="projects__row-img"
-              loading="lazy" />
+        <h3 class="projects__row-content-title">EXPERIMENTAL STUDY ON THERMAL PERFORMANCE OF METAL FOAM HEAT SINKS
+          IN SINGLE PHASE LIQUID IMMERSION COOLING.</h3>
+
+
+        <p class="thesis__row-content-desc" id="lessit">
+          This work presented an experimental study on the thermal performance of aluminum foam heat sinks in
+          single-phase liquid immersion cooling (SPLIC). A set of heat sinks with varying pores per inch (PPI) and
+          height is employed to test the thermal properties of heat sinks under different flow rates and power.
+          <button id="moreButton" class="btn-loadmore" onclick="showMore('more')">More</button>
+        </p>
+
+        <p class="thesis__row-content-desc display_none" id="showmore">
+          This work presented an experimental study on the thermal performance of aluminum foam heat sinks in
+          single-phase liquid immersion cooling (SPLIC). A set of heat sinks with varying pores per inch (PPI) and
+          height is employed to test the thermal properties of heat sinks under different flow rates and power. Metal
+          foams are used in place of conventional heat sinks for cooling, particularly aluminum alloy (Al-6101-T6) foam,
+          which is a type of lightweight porous material with a cellular structure consisting of a large volume fraction
+          of gas-filled open pores. It has a higher surface area-to-volume ratio, higher thermal conductivity, is
+          lightweight, has increased turbulence, and has structural integrity at high temperatures. The goal of this
+          experiment is to analyze the thermal and fluid properties of an aluminum foam heat sink when it is immersed in
+          a synthetic dielectric fluid (EC-100). A customized tank was designed and fabricated for the experimental
+          setup with a Thermal Test Vehicle (TTV), enabling the control of flow rate, heater temperature, and inlet
+          temperature of the fluid. A set of experiments were conducted using aluminum foam heat sinks with varying
+          pores per inch (5, 10, 20, and 40 PPI) for varying flow rates (1, 2, and 3 LPM) and heights (0.5 and 0.75
+          inches) with a relative density of 10~12%, mounted on a heater plate with heat fluxes of 19 W/cm^2 and 23.8
+          W/cm^2 respectively. Major outcomes from the experiment were that the heat sink of 10 PPI exhibited the best
+          heat transfer and lowest thermal resistance, while the heat sink of 5 PPI exhibited the highest “overall
+          surface area efficiency” in all conditions. The heat transfer was increased from 0.5-inch-high to
+          0.75-inch-hight foam cores.
+          <button id="moreButton" class="btn-loadmore" onclick="showMore('less')">Less</button>
+        </p>
+
+
+        <!-- <a href="./project-1.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">More</a> -->
+      </div>
+      <div class="container">
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+              <img src="./assets/png/thesiscertificate.png" alt="Chania">
+              <!-- <div class="carousel-caption">
+                <h3>Chania</h3>
+                <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+              </div> -->
+            </div>
+
+            <div class="item">
+              <img src="./assets/jpeg/thesis_man.jpg" alt="Chania">
+              <!-- <div class="carousel-caption">
+                <h3>Chania</h3>
+                <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+              </div> -->
+            </div>
           </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">EXPERIMENTAL STUDY ON THERMAL PERFORMANCE OF METAL FOAM HEAT SINKS
-              IN SINGLE PHASE LIQUID IMMERSION COOLING.</h3>
-            <p class="projects__row-content-desc">
-              This work presented an experimental study on the thermal performance of aluminum foam heat sinks in
-              single-phase liquid immersion cooling (SPLIC).
-            </p>
-            <a href="./project-1.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">More</a>
-          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
+
+      <!-- <div class="projects__row-img-cont">
+            <img src="./assets/png/thesiscertificate.png" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div> -->
     </div>
   </section>
   <section id="projects" class="projects sec-pad">
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-bg">
         <span class="heading-sec__main">Projects</span>
+        <h3 class="projects__row-content-title">Project 1</h3>
         <span class="heading-sec__sub">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
           tempora explicabo quae quod deserunt eius sapiente
@@ -334,6 +410,7 @@
   </footer>
 
   <script src="./index.js"></script>
+
 </body>
 
 </html>
