@@ -36,3 +36,14 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+function showMore(type) {
+  if (type == "more") {
+    $('#lessit').addClass('display_none')
+    $('#showmore').removeClass('display_none')
+  } else {
+    $('#showmore').addClass('display_none')
+    $('#lessit').removeClass('display_none')
+  }
+}
+
