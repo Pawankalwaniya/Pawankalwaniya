@@ -306,7 +306,8 @@ textarea {
   border-top: 2px solid #eee;
   border-bottom: 2px solid #eee;
   border-left: 2px solid #eee;
-  transition: background 0.3s;
+  border-right: 0.5px solid #eee;
+  transition: all 0.3s;
 }
 
 .home-hero__social-icon-link_right {
@@ -317,8 +318,8 @@ textarea {
   border-top: 2px solid #eee;
   border-bottom: 2px solid #eee;
   border-right: 2px solid #eee;
-  border-left: 1px solid #eee;
-  transition: background 0.3s;
+  border-left: 0.5px solid #eee;
+  transition: all 0.3s;
 }
 .home-hero__social-icon-link_left:hover {
   background: rgba(255, 255, 255, 0.1);
@@ -380,6 +381,7 @@ textarea {
   font-size: 2.8rem;
   margin-bottom: 3rem;
 }
+
 @media only screen and (max-width: 37.5em) {
   .about__content-title {
     font-size: 2.4rem;
@@ -387,7 +389,7 @@ textarea {
 }
 .about__content-details-para {
   font-size: 1.8rem;
-  color: grey;
+  color: white;
   max-width: 60rem;
   line-height: 1.7;
   margin-bottom: 1rem;
@@ -487,14 +489,13 @@ textarea {
   }
 }
 
-.btn-loadmore{
-  color:blueviolet;
+.btn-loadmore {
+  color: #000;
   background: transparent;
   border: none;
-  font-weight:700;
 }
 
-.display_none{
+.display_none {
   display: none;
   transition-delay: 3s;
 }
@@ -986,18 +987,41 @@ textarea {
   }
 }
 
-.carousel-control.right{
+.carousel-control.right {
   background: transparent !important;
 }
 
-.carousel-control.left{
+.carousel-control.left {
   background: transparent !important;
 }
 
-.glyphicon-chevron-right{
+.glyphicon-chevron-right {
   color: #000;
 }
 
-.glyphicon-chevron-left{
+.glyphicon-chevron-left {
   color: #000;
+}
+
+.item img {
+  width: 500px !important;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  padding-bottom: 0px !important;
+}
+
+.carousel-caption p {
+  visibility: hidden;
+}
+
+.item.active:hover .carousel-caption p {
+  visibility: visible;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
 }
