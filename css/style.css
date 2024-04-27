@@ -1025,3 +1025,14 @@ textarea {
   width: 70%;
   margin: auto;
 }
+
+.d-flex {
+  display: flex;
+}
+
+.project_tit {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
