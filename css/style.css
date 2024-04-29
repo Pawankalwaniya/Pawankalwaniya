@@ -638,7 +638,6 @@ textarea {
 
 .project-details__content {
   padding: 8rem 0;
-  max-width: 90rem;
   margin: auto;
 }
 .project-details__content-title {
@@ -663,7 +662,6 @@ textarea {
 
 .project-details__content-main {
   width: 100%;
-  max-width: 70rem;
   margin: auto;
 }
 
@@ -1034,5 +1032,38 @@ textarea {
   color: #000;
   font-size: 18px;
   font-weight: 700;
+  text-align: center;
+}
+@media only screen and (max-width: 56.25em) {
+  .grid-container {
+    display: block !important;
+  }
+  .grid-container3 {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .grid-container {
+    display: block !important;
+  }
+  .grid-container3 {
+    display: block !important;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
   text-align: center;
 }
